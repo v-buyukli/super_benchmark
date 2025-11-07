@@ -3,10 +3,15 @@ from datetime import datetime
 from fastapi import APIRouter
 
 from src.app.repositories.benchmark import BenchmarkRepository
-from src.app.schemas.benchmark import BenchmarkAverageStats
+from src.app.schemas.benchmark import BenchmarkAverageStats, BenchmarkResult
 
 
 router = APIRouter()
+
+
+@router.get('/', response_model=list[BenchmarkResult])
+async def get_all_results() -> list[BenchmarkResult]:
+    return await BenchmarkRepository.get_all_results()
 
 
 @router.get('/results/average/', response_model=BenchmarkAverageStats)
