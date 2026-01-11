@@ -50,10 +50,10 @@ Each benchmarking result includes the following fields:
 
 ## Setup & Run
 
-1.  **Clone the repository**
-2.  **Create and activate a virtual environment**
-3.  **Install dependencies**
-4.  **Configure environment variables**
+1.  **Clone the repository.**
+2.  **Create and activate a virtual environment.**
+3.  **Install dependencies.**
+4.  **Configure environment variables.**
 5.  **Run the application:**
     ```bash
     python -m src.app.main --reload
