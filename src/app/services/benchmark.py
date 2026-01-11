@@ -5,6 +5,7 @@ from src.app.tests.fixtures.load_fixtures import load_test_benchmarks
 
 async def load_benchmark_results() -> list[BenchmarkResult]:
     if settings.DEBUG:
+        # DEBUG mode allows us to get data directly from the test_database.json file which mimics the database
         return await load_test_benchmarks()
 
     raise NotImplementedError('Live mode is not implemented yet.')
