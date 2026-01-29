@@ -2,7 +2,7 @@
 name = "superbenchmark"
 version = "0.1.0"
 description = ""
-authors = ["Viktor <vktr.buyukli@gmail.com>"]
+authors = ["Viktor <vktr4work@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
